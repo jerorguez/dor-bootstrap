@@ -1,0 +1,55 @@
+
+:root {
+    /* ===== COLORS ===== */
+    --cornflower-blue: #797EF6;
+    --viking: #4ADEDE;
+    --picton-blue: #1AA7EC;
+    --jackson-purple: #1E2F97;
+    --green-planet: #07b79f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav span {
+    background: linear-gradient(90deg, var(--green-planet), var(--jackson-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ===== HEADER ===== */
+header {
+    height: 90vh;
+    background-image: url(../img/space_1.jpg);
+    background-size: cover;
+    background-position: 0;
+    position: relative;
+}
+
+.img-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 35vw;
+}
+
+.rocket {
+    position: absolute;
+    width: 10vw;
+    animation: img-moving 2s infinite;
+    -webkit-animation: img-moving 2s infinite;
+}
+
+.smoke {
+    width: 100%;
+}
+
+@keyframes img-moving {
+    0%, 100% { top: 50%; }
+    50% { top: 49%;}
+}
