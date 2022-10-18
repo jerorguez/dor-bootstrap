@@ -27,6 +27,11 @@ header {
     background-size: cover;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
 .bg-moon{
     background-image: url(../media/moon-bg.jpg);
     background-size: cover;
@@ -56,6 +61,26 @@ a img {
     animation: blink 1.8s linear infinite;
 }
 
+.quote-icon-size {
+    font-size: 13rem;
+}
+
+.quote-text-size span {
+    font-family: 'Zilla Slab Highlight';
+}
+
+.quote-text-size {
+    font-size: 6rem;
+}
+
+.title-mission-size {
+    font-size: 5rem;
+}
+
+.glitched-text {
+    font-family: hacked-font;
+}
+
 @keyframes blink {
     0%, 100% { opacity: 1;}
     50% { opacity: 0;}
@@ -72,4 +97,10 @@ video {
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
+}
+
+
+@font-face {
+    font-family: hacked-font;
+    src: url(../fonts/Hacked-KerX.ttf);
 }
