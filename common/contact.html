@@ -28,7 +28,7 @@
             <div id="navigation" class="collapse navbar-collapse text-center">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5 px-3" href="#">Inicio</a>
+                        <a class="nav-link text-light fs-5 px-3" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light fs-5 px-3" href="#carouselExperiences">Experiencias</a>
@@ -45,32 +45,36 @@
             <h4 class="mb-5 glitched-text">El Planetario de la Next Gen <span class="blink fw-bold fs-2">_</span></h4>
             <a class="btn btn-outline-light btn-lg" href="#carouselExperiences" role="button">Ver Experiencias</a>
         </div>
+
+        <div class="position-absolute h-25 d-lg-block d-none rocket-position">
+            <img class="h-100" src="../assets/media/alien_rocket.svg" alt="Alien Rocket">
+        </div>
     </header>
 
     <div class="container-fluid w-50 my-5">
-        <h1>Contacto</h1>
+        <h1 class="my-4 zilla-font quote-text-size">Contacto</h1>
         <form>
             <div class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" />
                 <label class="form-label" for="form4Example1">Nombre</label>
+                <input type="text" id="form4Example1" class="form-control" />
             </div>
     
             <div class="form-outline mb-4">
-                <input type="email" id="form4Example2" class="form-control" />
                 <label class="form-label" for="form4Example2">Email</label>
+                <input type="email" id="form4Example2" class="form-control" />
             </div>
     
             <div class="form-outline mb-4">
-                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
                 <label class="form-label" for="form4Example3">Coméntanos lo quieras:</label>
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
             </div>
     
             <div class="form-check d-flex justify-content-center mb-4">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-                <label class="form-check-label" for="form4Example4">Acepto la política de privacidad</label>
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" />
+                <label class="form-check-label" for="form4Example4"><a target="_blank" href="https://policies.google.com/privacy?hl=es">Acepto la política de privacidad</a></label>
             </div>
     
-            <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+            <button type="submit" class="btn btn-dark btn-lg btn-block mb-4">Enviar</button>
         </form>
     </div>
 
