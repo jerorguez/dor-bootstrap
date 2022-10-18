@@ -14,42 +14,62 @@
     box-sizing: border-box;
 }
 
-nav span {
-    background: linear-gradient(90deg, var(--green-planet), var(--jackson-purple));
-    -webkit-background-clip: text;
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(../media/space_1.jpg);
+    background-size: cover;
+}
+
+.bg-moon{
+    background-image: url(../media/moon-bg.jpg);
+    background-size: cover;
+}
+.bg-space{
+    background-image: url(../media/spaceship.jpg);
+    background-size: cover;
+}
+
+.black {
+    background-color: #000;
+}
+
+a img {
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.gradient {
+    background: linear-gradient(90deg, white, var(--green-planet));
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
-
-/* ===== HEADER ===== */
-header {
-    height: 90vh;
-    background-image: url(../img/space_1.jpg);
-    background-size: cover;
-    background-position: 0;
-    position: relative;
+.blink {
+    animation: blink 1.8s linear infinite;
 }
 
-.img-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 35vw;
+@keyframes blink {
+    0%, 100% { opacity: 1;}
+    50% { opacity: 0;}
 }
 
-.rocket {
-    position: absolute;
-    width: 10vw;
-    animation: img-moving 2s infinite;
-    -webkit-animation: img-moving 2s infinite;
+.video-container {
+    overflow: hidden;
 }
 
-.smoke {
+video {
     width: 100%;
-}
-
-@keyframes img-moving {
-    0%, 100% { top: 50%; }
-    50% { top: 49%;}
+    position: absolute;
+    bottom: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
 }
